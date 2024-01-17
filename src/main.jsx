@@ -5,11 +5,14 @@ import App from "./App.jsx";
 import Layout from "./layout.jsx";
 
 import "./index.css";
+import { UserContextProvider } from "./elements/common/context/UserContext/UserContextProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Layout>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Layout>
+  <UserContextProvider>
+    <Layout>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Layout>
+  </UserContextProvider>
 );

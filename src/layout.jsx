@@ -1,11 +1,13 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 const Layout = ({ children }) => {
   return (
     <Box>
-      <Box bgcolor="#dfe6e9">
+      <Box bgcolor="#0984e3">
         <Container disableGutters>
-          <img src="./root/Fastenal-Logo.svg" width={300} height={50} />
+          <Typography color="white" fontStyle="italic" fontSize={48}>
+            Fast.com
+          </Typography>
         </Container>
       </Box>
       <Container>{children}</Container>
